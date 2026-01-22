@@ -34,7 +34,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           {project.title}
         </h3>
         
-        <p className="text-gray-400 text-[13px] mb-10 leading-relaxed line-clamp-4 font-light italic">
+        <p className="text-gray-400 text-[13px] mb-10 leading-relaxed font-light">
           {project.longDescription}
         </p>
         
