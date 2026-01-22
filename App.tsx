@@ -186,8 +186,7 @@ const App: React.FC = () => {
       {/* About / Final CTA */}
       <section id="about" className="py-40 relative border-t border-white/5">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-6xl font-black mb-12 tracking-tight italic uppercase">Seema <span className="text-blue-500 not-italic">Datar.</span></h2>
-          <p className="text-2xl text-gray-400 leading-relaxed mb-16 font-light italic">
+          <p className="text-2xl text-gray-400 leading-relaxed font-light italic">
             "{PERSONAL_INFO.bio}"
           </p>
         </div>
