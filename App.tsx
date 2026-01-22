@@ -119,7 +119,7 @@ const App: React.FC = () => {
             <div className="max-w-2xl">
               <h2 className="text-5xl md:text-7xl font-black mb-8 tracking-tighter uppercase italic">Strategic <span className="text-blue-500 not-italic">Portals.</span></h2>
               <p className="text-gray-500 text-xl font-light leading-relaxed border-l-2 border-blue-600/30 pl-8">
-                Demonstrated architectures in automated compliance, merchant risk scoring, and high-visibility financial telemetry.
+                Demonstrated architectures in automated compliance, merchant risk scoring, and high-visibility telemetry.
               </p>
             </div>
           </div>
