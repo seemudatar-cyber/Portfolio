@@ -52,7 +52,7 @@ export const PERSONAL_INFO = {
   name: "Seema Datar",
   role: "Director | Senior Engineering Leader",
   tagline: "Connect | Analyze | Enable",
-  bio: "Exceptional software professional with 23 years of experience encompassing Payments technologies, settlement workflows, and data-driven solutions architecture. I drive business success through strategic relationships and high-integrity engineering.",
+  bio: "Exceptional software professional encompassing Payments technologies, settlement workflows, and data-driven solutions architecture. I drive business success through strategic relationships and high-integrity engineering.",
   impactSummary: "A curated record of strategic leadership at Microsoft and JPMorgan, specializing in restoring stability to complex systems, optimizing global ETL pipelines, and leading cross-org alignment for multi-rail settlement platforms.",
   location: "Kirkland, WA",
   github: "https://github.com/seemudatar-cyber",
