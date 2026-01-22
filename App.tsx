@@ -198,8 +198,7 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-12">
             <div className="text-center md:text-left">
-              <h3 className="text-3xl font-black mb-2 uppercase tracking-tighter">Seema <span className="text-blue-500">Datar</span></h3>
-              <p className="text-gray-600 text-[10px] font-black uppercase tracking-[0.5em]">Kirkland, WA • Global Engineering Leadership</p>
+              <p className="text-gray-500 text-[10px] font-black uppercase tracking-[0.5em]">Kirkland, WA • Global Engineering Leadership</p>
             </div>
             <div className="flex items-center space-x-10 text-gray-500 text-[10px] font-black uppercase tracking-widest">
               {PERSONAL_INFO.github && <a href={PERSONAL_INFO.github} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a>}
