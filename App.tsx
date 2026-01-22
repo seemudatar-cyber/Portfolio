@@ -72,16 +72,14 @@ const App: React.FC = () => {
             <button onClick={() => scrollToSection('solutions')} className="hover:text-blue-400 transition-colors uppercase">Portals</button>
             <button onClick={() => scrollToSection('impact')} className="hover:text-blue-400 transition-colors uppercase">Leadership</button>
             <button onClick={() => scrollToSection('about')} className="hover:text-blue-400 transition-colors uppercase">Profile</button>
-            {PERSONAL_INFO.linkedin && (
-              <a 
-                href={PERSONAL_INFO.linkedin} 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-2.5 bg-blue-600 text-white rounded-full hover:bg-blue-500 transition-all font-black shadow-lg shadow-blue-600/20"
-              >
-                Contact
-              </a>
-            )}
+            <a 
+              href={PERSONAL_INFO.linkedin} 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2.5 bg-blue-600 text-white rounded-full hover:bg-blue-500 transition-all font-black shadow-lg shadow-blue-600/20"
+            >
+              Contact
+            </a>
           </div>
         </div>
       </nav>
@@ -176,7 +174,7 @@ const App: React.FC = () => {
             
             <div className="space-y-10">
               {[
-                { title: 'Janus Alignment', desc: 'Leading strategic alignment across settlement rails at JPMorgan.' },
+                { title: 'Strategic Alignment', desc: 'Leading cross-org alignment for multi-rail settlement platforms.' },
                 { title: 'Global Compliance', desc: 'Architecting SOX-compliant financial systems for global scale.' },
                 { title: 'Operational Stability', desc: 'Restoring mission-critical services during large-scale regressions.' }
               ].map((item, idx) => (
@@ -200,17 +198,14 @@ const App: React.FC = () => {
                  <div className="w-3 h-3 rounded-full bg-yellow-500/30" />
                  <div className="w-3 h-3 rounded-full bg-green-500/30" />
                </div>
-               <div className="space-y-8">
+               <div className="flex flex-wrap gap-3">
                  {SKILLS.map(skill => (
-                   <div key={skill.name}>
-                     <div className="flex justify-between items-center mb-3 text-[10px] font-black uppercase tracking-widest">
-                       <span className="text-white/80">{skill.name}</span>
-                       <span className="text-blue-500">Mastery</span>
-                     </div>
-                     <div className="h-1 w-full bg-white/5 rounded-full overflow-hidden">
-                       <div className="h-full bg-blue-600 w-[95%] shadow-[0_0_10px_rgba(37,99,235,0.5)] transition-all duration-1000 group-hover:w-full" />
-                     </div>
-                   </div>
+                   <span 
+                     key={skill.name} 
+                     className="px-4 py-2.5 bg-blue-500/10 border border-blue-500/20 rounded-xl text-[11px] font-semibold text-blue-300/90 hover:bg-blue-500/20 hover:border-blue-500/30 transition-all"
+                   >
+                     {skill.name}
+                   </span>
                  ))}
                </div>
             </div>
@@ -225,26 +220,6 @@ const App: React.FC = () => {
           <p className="text-2xl text-gray-400 leading-relaxed mb-16 font-light italic">
             "{PERSONAL_INFO.bio}"
           </p>
-          <div className="flex flex-wrap justify-center gap-6">
-            {PERSONAL_INFO.email && (
-              <a 
-                href={`mailto:${PERSONAL_INFO.email}`}
-                className="px-12 py-5 bg-white text-black font-black text-[10px] uppercase tracking-widest rounded-xl hover:bg-blue-50 transition-all shadow-2xl"
-              >
-                Direct Inquiry
-              </a>
-            )}
-            {PERSONAL_INFO.linkedin && (
-              <a 
-                href={PERSONAL_INFO.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-12 py-5 bg-blue-600 text-white font-black text-[10px] uppercase tracking-widest rounded-xl hover:bg-blue-500 transition-all shadow-2xl"
-              >
-                Executive Network
-              </a>
-            )}
-          </div>
         </div>
       </section>
 

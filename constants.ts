@@ -44,7 +44,7 @@ export const SKILLS: Skill[] = [
   { name: 'Azure Technologies', category: 'tools' },
   { name: 'Compliance & Risk (SOX)', category: 'tools' },
   { name: 'Enterprise Architecture', category: 'backend' },
-  { name: 'Machine Learning Apps', category: 'ai' },
+  { name: 'Applied AI', category: 'ai' },
   { name: 'Cross-Functional Leadership', category: 'tools' },
 ];
 
