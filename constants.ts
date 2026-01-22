@@ -42,7 +42,7 @@ export const SKILLS: Skill[] = [
   { name: 'Financial Reconciliation', category: 'backend' },
   { name: 'Data Analysis & Telemetry', category: 'ai' },
   { name: 'Azure Technologies', category: 'tools' },
-  { name: 'Compliance & Risk (SOX)', category: 'tools' },
+  { name: 'Regulatory Compliance', category: 'tools' },
   { name: 'Enterprise Architecture', category: 'backend' },
   { name: 'Applied AI', category: 'ai' },
   { name: 'Cross-Functional Leadership', category: 'tools' },

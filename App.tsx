@@ -27,29 +27,6 @@ const App: React.FC = () => {
     }
   };
 
-  const downloadProfileInfo = () => {
-    const data = {
-      name: PERSONAL_INFO.name,
-      role: PERSONAL_INFO.role,
-      bio: PERSONAL_INFO.bio,
-      impact: PERSONAL_INFO.impactSummary,
-      contact: {
-        email: PERSONAL_INFO.email,
-        linkedin: PERSONAL_INFO.linkedin,
-        github: PERSONAL_INFO.github
-      }
-    };
-    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'seema-datar-profile.json';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-  };
-
   return (
     <div className="min-h-screen bg-[#050505] text-white font-sans selection:bg-blue-500/30">
       {/* Background Grid */}
@@ -59,10 +36,9 @@ const App: React.FC = () => {
       <nav className={`fixed top-0 w-full z-40 transition-all duration-500 ${scrolled ? 'bg-black/95 backdrop-blur-md border-b border-white/5 py-4 shadow-lg' : 'bg-transparent py-10'}`}>
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <div 
-            className="flex items-center space-x-3 group cursor-pointer" 
+            className="group cursor-pointer" 
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
-            <div className="w-9 h-9 bg-blue-600 rounded-lg flex items-center justify-center font-black text-sm shadow-[0_0_15px_rgba(37,99,235,0.4)] transition-transform group-hover:scale-110">SD</div>
             <span className="font-black text-xl tracking-tighter uppercase">
               Seema <span className="text-blue-500">Datar</span>
             </span>
@@ -111,12 +87,6 @@ const App: React.FC = () => {
               >
                 View Portals
               </button>
-              <button 
-                onClick={downloadProfileInfo}
-                className="px-12 py-5 bg-white/5 border border-white/10 rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-white/10 transition-all text-center"
-              >
-                Download Profile
-              </button>
             </div>
           </div>
         </div>
@@ -130,9 +100,9 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12">
           {[
             { label: 'Experience', val: '23+ Yrs' },
-            { label: 'Integrity', val: 'SOX/SEC' },
+            { label: 'Ecosystems', val: 'Regulated' },
             { label: 'Scale', val: 'Global' },
-            { label: 'Impact', val: 'VP Level' }
+            { label: 'Impact', val: 'Executive' }
           ].map((stat, i) => (
             <div key={i} className="text-center md:text-left">
               <p className="text-blue-500 font-black text-3xl mb-1">{stat.val}</p>
