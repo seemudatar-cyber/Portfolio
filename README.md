@@ -1,20 +1,38 @@
+# Seema Datar - Executive Portfolio
+
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <h3>
+    <a href="https://seemudatar-cyber.github.io/Portfolio/">🌐 View Live Portfolio</a>
+  </h3>
 </div>
 
-# Run and deploy your AI Studio app
+This is the source code for my professional portfolio, built with React, Vite, and Tailwind CSS.
 
-This contains everything you need to run your app locally.
+## 🚀 Deployment
 
-View your app in AI Studio: https://ai.studio/apps/drive/10y7Sa4SgTlTNccAaNcXhoHDUAvoYMeei
+This project is deployed to GitHub Pages.
 
-## Run Locally
+**Live URL:** [https://seemudatar-cyber.github.io/Portfolio/](https://seemudatar-cyber.github.io/Portfolio/)
 
-**Prerequisites:**  Node.js
+To deploy updates:
+```bash
+npm run deploy
+```
 
+## 🛠️ Run Locally
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+2.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+    The app will run at `http://localhost:5000` (or the next available port).
+
+3.  **Build for production:**
+    ```bash
+    npm run build
+    ```
