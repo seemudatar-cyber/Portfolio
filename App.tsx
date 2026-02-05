@@ -206,7 +206,7 @@ const App: React.FC = () => {
             </div>
           </div>
           <div className="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[9px] text-gray-700 font-bold uppercase tracking-[0.5em] gap-4">
-             <span>© 2025 Executive Portfolio • Seema Datar</span>
+             <span>© 2026 Executive Portfolio • Seema Datar</span>
              <span className="text-blue-500/40">Secure • Scalable • Strategic</span>
           </div>
         </div>
